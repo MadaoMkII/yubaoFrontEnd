@@ -83,7 +83,7 @@
 					</div>
 					<div class="row nomargin" id="keyWords_pc" style="position: relative;margin: 0;top:-65px">
 						<div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 nopadding" style="padding: 0;">
-							<p style="background: #fee2b7;line-height: 30px;border-radius: 5px;">Yubaopay 玉寶 - 淘寶代付、支付寶代儲、微信紅包，最專業的跨海支付幫手！<span style="display: inline-block;position: absolute;right: -10px;top: -0.5em;background: #fff;width: 1.5em;height: 1.5em;text-align: center;font-size: 1.2em;border-radius: 50%;border: 1px solid #000;line-height: 1.2em;cursor: pointer;" v-on:click="closeKeyPC()">×</span></p>
+							<p style="background: #fee2b7;line-height: 30px;border-radius: 5px;">Yubaopay 玉寶 - 淘寶代付、支付寶代儲、微信紅包，最專業的跨海代購、支付幫手！<span style="display: inline-block;position: absolute;right: -10px;top: -0.5em;background: #fff;width: 1.5em;height: 1.5em;text-align: center;font-size: 1.2em;border-radius: 50%;border: 1px solid #000;line-height: 1.2em;cursor: pointer;" v-on:click="closeKeyPC()">×</span></p>
 						</div>
 					</div>
 					<div class="row nomargin" style="position: relative;margin: 0;top:-60px">
@@ -189,7 +189,7 @@
 			</div>
 			<div class="row nomargin" id="keyWords" style="margin: 0;margin-top: 1em;">
 				<div class="col-sm-12 col-xs-12">
-					<p style="text-align: left;font-size: 0.8em;margin-bottom: 0;background: #fee2b7;padding: 10px 15px;border-radius: 10px;">Yubaopay 玉寶 - 淘寶代付、支付寶代儲、微信紅包，最專業的跨海支付幫手！<span style="display: inline-block;position: absolute;right: 10px;top: -0.5em;background: #fff;width: 1.5em;height: 1.5em;text-align: center;font-size: 1.2em;border-radius: 50%;border: 1px solid #000;line-height: 1.2em;" v-on:click="closeKey()">×</span></p>
+					<p style="text-align: left;font-size: 0.8em;margin-bottom: 0;background: #fee2b7;padding: 10px 15px;border-radius: 10px;">Yubaopay 玉寶 - 淘寶代付、支付寶代儲、微信紅包，最專業的跨海代購、支付幫手！<span style="display: inline-block;position: absolute;right: 10px;top: -0.5em;background: #fff;width: 1.5em;height: 1.5em;text-align: center;font-size: 1.2em;border-radius: 50%;border: 1px solid #000;line-height: 1.2em;" v-on:click="closeKey()">×</span></p>
 				</div>
 			</div>
 			<div class="row nomargin" style="margin: 0;margin-top: 1em;border-bottom: 0.5em solid #f5f5f5;padding-bottom: 1em;">
