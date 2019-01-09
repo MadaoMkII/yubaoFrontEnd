@@ -81,7 +81,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="row nomargin" style="position: relative;top: -60px;margin: 0;">
+					<div class="row nomargin" id="keyWords_pc" style="position: relative;margin: 0;top:-65px">
+						<div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 nopadding" style="padding: 0;">
+							<p style="background: #fee2b7;line-height: 30px;border-radius: 5px;">Yubaopay 玉寶 - 淘寶代付、支付寶代儲、微信紅包，最專業的跨海支付幫手！<span style="display: inline-block;position: absolute;right: -10px;top: -0.5em;background: #fff;width: 1.5em;height: 1.5em;text-align: center;font-size: 1.2em;border-radius: 50%;border: 1px solid #000;line-height: 1.2em;cursor: pointer;" v-on:click="closeKeyPC()">×</span></p>
+						</div>
+					</div>
+					<div class="row nomargin" style="position: relative;margin: 0;top:-60px">
 						<div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 nopadding" style="background: #fff;box-shadow: 0px 0px 10px #333;border-radius: 5px;padding: 30px 0;">
 							<div class="row nomargin" style="margin-bottom: 15px;">
 								<div class="col-lg-12 col-md-12 nopadding">
@@ -455,6 +460,9 @@ export default {
   	},
   	closeKey:function () {
   		$('#keyWords').hide();
+  	},
+  	closeKeyPC:function () {
+  		$('#keyWords_pc').hide();
   	}
   }
 }
