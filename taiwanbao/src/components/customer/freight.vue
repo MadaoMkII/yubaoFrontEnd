@@ -62,7 +62,7 @@
 							<div class="col-lg-12 col-md-12">
 								<p class="pull-left hidden-sm hidden-xs" style="font-size: 20px;font-weight: bold; margin-right:10px;">应付新台币:</p>
 								<p class="pull-left hidden-sm hidden-xs" style="font-size: 20px;font-weight: bold; margin-right:10px; ">$<span style="color:blue; margin:0 5px; font-weight:normal;">{{postageAmount}}</span>TWD</p>
-							
+
 							</div>
 						</div>
 						<div class="row nomargin" style="margin-top: 20px;">
@@ -113,7 +113,7 @@
 												</div>
 											</div>
 										</div>
-										
+
 									</div>
 								</div>
 						<div class="row nomargin" style="margin-top: 15px;">
@@ -166,7 +166,7 @@
 								<div class="row" style="margin-top: 20px;">
 									<div class="col-lg-12 col-md-12">
 										<p class="pull-left" style="font-size: 20px;font-weight: bold;">订单明细：{{billID}}</p>
-										
+
 										<p  class="pull-right"  style="background:#08bf69; padding:5px 5px; border-radius:5px; color:#fff; ">{{billState}}</p>
 									</div>
 								</div>
@@ -214,7 +214,7 @@
 													<p class="pull-left" style="margin-bottom: 0;color: #008000;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
 												</div>
 												<div class="row" style="padding: 0 15px">
-													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
 												</div>
 											</div>
 										</div>
@@ -373,10 +373,10 @@
 								    			break;
 								    	}
 									}
-									
+
 								}
 			            	}
-			            	
+
 						}
 					  }.bind(this)
 				});
@@ -474,18 +474,18 @@
 	  		},
 	  		transformDate:function (timeStamp) {
 		  		var date = new Date(timeStamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
-		        var y = date.getFullYear();    
-			    var m = date.getMonth() + 1;    
-			    m = m < 10 ? ('0' + m) : m;    
-			    var d = date.getDate();    
-			    d = d < 10 ? ('0' + d) : d;    
-			    var h = date.getHours();  
-			    h = h < 10 ? ('0' + h) : h;  
-			    var minute = date.getMinutes();  
-			    var second = date.getSeconds();  
-			    minute = minute < 10 ? ('0' + minute) : minute;    
-			    second = second < 10 ? ('0' + second) : second;   
-			    return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;  
+		        var y = date.getFullYear();
+			    var m = date.getMonth() + 1;
+			    m = m < 10 ? ('0' + m) : m;
+			    var d = date.getDate();
+			    d = d < 10 ? ('0' + d) : d;
+			    var h = date.getHours();
+			    h = h < 10 ? ('0' + h) : h;
+			    var minute = date.getMinutes();
+			    var second = date.getSeconds();
+			    minute = minute < 10 ? ('0' + minute) : minute;
+			    second = second < 10 ? ('0' + second) : second;
+			    return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;
 
 		  	},
 
