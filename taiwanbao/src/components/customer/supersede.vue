@@ -20,7 +20,7 @@
 					<p style="margin-bottom: 0;line-height: 42px;color: #fff;">代付</p>
 				</div>
 	    		<mobileList></mobileList>
-			</div>			
+			</div>
 			<div class="row nomargin" style="margin: 0;margin-top: 20px;margin-bottom: 30px;">
 				<div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2 nopadding" style="padding: 0px;">
 					<div class="row nomargin">
@@ -77,7 +77,7 @@
 									<div class="col-lg-12 col-md-12" style="padding: 0 15px;">
 										<div class="row nomargin">
 											<p class="pull-left nomargin" style="font-size: 16px;color: #333;margin-right: 40px;font-weight: bold; line-height:22px; ">請在下方填寫商品的代付鏈接：</p>
-											
+
 										</div>
 										<div class="row nomargin " style="margin-top:15px;">
 											<p class="pull-left nomargin" style="font-size: 12px;color: #58d198;margin-right: 15px; line-height:22px; ">朋友帳號：</p>
@@ -174,7 +174,7 @@
 									<div class="pull-left" style="width: 15%;">
 										<img src="../../assets/images/taixin.jpg" class="pull-right" style="width: 34px;margin-right: 15px;border-radius: 50%; margin-left: 15px;"/>
 										<input type="radio" name="typeStr"  value="812 台新商銀 收款賬戶 002857" v-model="typeStr" class="pull-right" style="margin-top: 10px;"/>
-										
+
 									</div>
 									<div class="pull-left" style="width: 85%;">
 										<div class="row nomargin">
@@ -192,7 +192,7 @@
 									<div class="pull-left" style="width: 30%;">
 										<img src="../../assets/images/taixin.jpg" class="pull-right" style="width: 34px;margin-right: 15px;border-radius: 50%; margin-left: 15px;"/>
 										<input type="radio" name="typeStr"  value="812 台新商銀 收款賬戶 002857" v-model="typeStr" class="pull-right" style="margin-top: 10px;"/>
-										
+
 									</div>
 									<div class="pull-left" style="width: 70%;">
 										<div class="row nomargin">
@@ -210,7 +210,7 @@
 									<div class="pull-left" style="width: 15%;">
 										<img src="../../assets/images/xintuo.jpg" class="pull-right" style="width: 34px;margin-right: 15px;border-radius: 50%; margin-left:15px; "/>
 										<input type="radio" name="typeStr" value="822 中國信託 收款賬戶 141191" v-model="typeStr" class="pull-right" style="margin-top: 10px;"/>
-										
+
 									</div>
 									<div class="pull-left" style="width: 85%;">
 										<div class="row nomargin">
@@ -225,7 +225,7 @@
 									<div class="pull-left" style="width: 30%;">
 										<img src="../../assets/images/xintuo.jpg" class="pull-right" style="width: 34px;margin-right: 15px;border-radius: 50%; margin-left:15px; "/>
 										<input type="radio" name="typeStr" value="822 中國信託 收款賬戶 141191" v-model="typeStr" class="pull-right" style="margin-top: 10px;"/>
-										
+
 									</div>
 									<div class="pull-left" style="width: 70%;">
 										<div class="row nomargin">
@@ -307,7 +307,7 @@
 									</div>
 									<div class="row nomargin" style="margin-top: 30px;">
 										<p class="pull-left" style="font-size: 20px;font-weight: bold;text-align: left;">您选择的付款方式：<span style="margin-left: 15px;" v-if="typeStr == 'R币代付'">{{typeStr}}</span><span style="margin-left: 15px;" v-if="typeStr != 'R币代付'">ATM银行转账</span></p>
-										<button class="btn btn-default pull-left" style="color: #00a6ff;border: 0.5px solid #00a6ff;font-size: 10px;padding: 3px 12px; margin-left:20px; margin-top:2px;" @click="popUpAddBank"><img src="../../assets/images/newusericon.png" style="width: 10px;margin-right: 5px;"/>新增賬戶</button>	
+										<button class="btn btn-default pull-left" style="color: #00a6ff;border: 0.5px solid #00a6ff;font-size: 10px;padding: 3px 12px; margin-left:20px; margin-top:2px;" @click="popUpAddBank"><img src="../../assets/images/newusericon.png" style="width: 10px;margin-right: 5px;"/>新增賬戶</button>
 
 									</div>
 									<div class="row nomargin" style="margin-top: 15px;" v-if="typeStr == 'R币代付'">
@@ -343,7 +343,7 @@
 														<p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 30px;width: 100%;text-align: left;">银行：{{typeStr}}</p>
 													</div>
 													<div class="row" style="padding: 0 15px">
-														<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+														<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
 													</div>
 												</div>
 											</div>
@@ -362,7 +362,7 @@
 										<div class="col-lg-6 col-md-6" style="padding: 0 15px;">
 											<button type="button" class="pull-left btn btn-warning" v-on:click="finalStep()">下一步</button>
 										</div>
-										
+
 									</div>
 								</div>
 							</div>
@@ -379,7 +379,7 @@
 									<div class="row">
 										<div class="col-lg-12 col-md-12">
 											<p class="pull-left" style="font-size: 20px;font-weight: bold;text-align: left;">订单明细：{{billID}}</p>
-											
+
 											<p  class="pull-right hidden-sm hidden-xs"  style="background:#08bf69; padding:5px 5px; border-radius:5px; color:#fff; ">{{billState}}</p>
 											<p  class="pull-left hidden-lg hidden-md"  style="background:#08bf69; padding:5px 5px; border-radius:5px; color:#fff; ">{{billState}}</p>
 										</div>
@@ -467,7 +467,7 @@
 														<p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
 													</div>
 													<div class="row" style="padding: 0 15px">
-														<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+														<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
 													</div>
 												</div>
 											</div>
@@ -525,7 +525,7 @@
 					</center>
 					<center style="margin-top: 10px;"><p style="margin-bottom: 0;font-size: 10px;color: #999;">玉寶國際有限公司 © 版權所有 2018-2020</p></center>
 				</div>
-			</div>-->			
+			</div>-->
 		</div>
 		<!--手机端-->
 		<!--<div class="hidden-lg hidden-md" style="background: #f5f5f5;">
@@ -604,7 +604,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>-->
 		<!--綁定銀行卡彈窗-->
       <div class="modal fade" id="bankModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -922,10 +922,10 @@
 				    		that.getCenterNotice.showFlag=true;
 				    		that.getCenterNotice.noticeArray = res.data;
 				    	}
-				    	
+
 				    },
 				    error:function(res){
-				    	
+
 				    }
 		  		});
 
@@ -1012,11 +1012,11 @@
 	  		if(parseFloat(this.RMBAmount).toString() == "NaN") {
 			　　layer.msg('请输入正确的储值金额',{icon:5});
 	  			return;
-		　　} 
+		　　}
 			if(this.links == '') {
 			　　layer.msg('请输入正确的商品鏈接',{icon:5});
 	  			return;
-		　　} 
+		　　}
 
 	  		$('#step1').fadeOut(1);
 	  		$('#step2').fadeIn();
@@ -1064,12 +1064,12 @@
 
 	  	},
 	  	finalStep:function () {
-	  		
+
 	  		/*var isVirtualItem = false;
 	  		if (this.itemType == 'fictitiousItem') {
 	  			isVirtualItem = true;
 	  		}*/
-	  		
+
 	  		var param={};
 	  		var url='';
 	  		if (this.typeStr == 'R币代付') {
@@ -1087,7 +1087,7 @@
 					  }
 		  		}
 		  		url=getService()+"/item/addBillByRcoins";
-		  		
+
 	  		} else{
 	  			if(this.chooseBank=='' || this.chooseBank==null){
 		  			layer.msg('請選擇付款銀行！',{icon:5});
@@ -1146,7 +1146,7 @@
 				    	layer.msg('请求出错，请重试！',{icon:5});
 				    }
 		  		});
-	  		
+
 	  	},
 	  	judgeState(typeState,dealState){
 	  		if(dealState==0){
@@ -1174,18 +1174,18 @@
 	  	//	  	时间戳转为日期
 	  	transformDate:function (timeStamp) {
 	  		var date = new Date(timeStamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
-	        var y = date.getFullYear();    
-		    var m = date.getMonth() + 1;    
-		    m = m < 10 ? ('0' + m) : m;    
-		    var d = date.getDate();    
-		    d = d < 10 ? ('0' + d) : d;    
-		    var h = date.getHours();  
-		    h = h < 10 ? ('0' + h) : h;  
-		    var minute = date.getMinutes();  
-		    var second = date.getSeconds();  
-		    minute = minute < 10 ? ('0' + minute) : minute;    
-		    second = second < 10 ? ('0' + second) : second;   
-		    return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;  
+	        var y = date.getFullYear();
+		    var m = date.getMonth() + 1;
+		    m = m < 10 ? ('0' + m) : m;
+		    var d = date.getDate();
+		    d = d < 10 ? ('0' + d) : d;
+		    var h = date.getHours();
+		    h = h < 10 ? ('0' + h) : h;
+		    var minute = date.getMinutes();
+		    var second = date.getSeconds();
+		    minute = minute < 10 ? ('0' + minute) : minute;
+		    second = second < 10 ? ('0' + second) : second;
+		    return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;
 //	        var str = Y+M+D+h+m+s;
 //	        return date;
 	  	},
@@ -1239,7 +1239,7 @@
           crossDomain: true,
           success: function (res) {
             if (res.error_code == 0 || res.error_code == 200) {
-              
+
             }else{
                 this.popup_error_msg ='发送验证码失败！';
                 $('#myErrorModal').modal('show');
@@ -1281,7 +1281,7 @@
 	          layer.msg(' 賬號末六位不能為空！',{icon:5});
 	        }else if(!this.bankCode){
 	          layer.msg(' 驗證碼不能為空！',{icon:5});
-	        } 
+	        }
 
 	        if(this.sixCode.length!=6){
 	          layer.msg(' 請輸入正確的賬號末六位！',{icon:5});
