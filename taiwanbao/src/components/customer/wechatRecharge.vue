@@ -262,7 +262,7 @@
 													<p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">银行：{{typeStr}}</p>
 												</div>
 												<div class="row nomargin" style="padding: 0 15px">
-													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">一定要汇到上面的帳號，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">一定要汇到上面的帳號，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
 												</div>
 											</div>
 										</div>
@@ -391,7 +391,7 @@
 													<p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
 												</div>
 												<div class="row nomargin" style="padding: 0 15px">
-													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">一定要汇到上面的帳號，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">一定要汇到上面的帳號，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
 												</div>
 											</div>
 										</div>
