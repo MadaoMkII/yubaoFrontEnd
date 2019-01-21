@@ -159,7 +159,7 @@
 												</div>
 											</div>
 										</div>
-
+										
 										<div class="row nomargin" style="margin-top: 30px;">
 											<div class="col-lg-12 col-md-12">
 												<center><input type="checkbox" id="alreadyRead" style="margin-right: 5px;position: relative;top: 1px;"/>我已閱讀并同意<a href="javascript:void(0)" v-on:click="showAgreeModal()">「結匯授權同意書」</a></center>
@@ -229,7 +229,7 @@
 								<div class="row nomargin" style="margin-top: 20px;">
 									<div class="col-lg-12 col-md-12">
 										<p class="pull-left" style="font-size: 20px;font-weight: bold;text-align: left;">您選擇的付款方式：<span style="margin-left: 15px;">ATM銀行轉賬 </span></p>
-										<button class="btn btn-default pull-left" style="color: #00a6ff;border: 0.5px solid #00a6ff;font-size: 10px;padding: 3px 12px; margin-left:20px; margin-top:2px;" @click="popUpAddBank"><img src="../../assets/images/newusericon.png" style="width: 10px;margin-right: 5px;"/>新增帳戶</button>
+										<button class="btn btn-default pull-left" style="color: #00a6ff;border: 0.5px solid #00a6ff;font-size: 10px;padding: 3px 12px; margin-left:20px; margin-top:2px;" @click="popUpAddBank"><img src="../../assets/images/newusericon.png" style="width: 10px;margin-right: 5px;"/>新增帳戶</button>	
 									</div>
 								</div>
 								<div class="row nomargin" style="margin-top: 15px;">
@@ -246,7 +246,7 @@
 														<a href="javascript:void(0)"  class="pull-left"  style="color: #2a6baf;margin-right: 10px;line-height: 22px; text-align: left;" v-if="chooseBank==item.accountName"><img src="../../assets/images/chooseIcon.png"/>約定帳戶</a>
 													</div>
 												</div>
-
+												
 												<div class="row nomargin" style="padding: 0 15px">
 													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">请按订单金额使用您已经登记的银行帳號付款，非上列银行帳戶转入或金额不符将不会为您完成交易！</p>
 												</div>
@@ -262,7 +262,7 @@
 													<p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">银行：{{typeStr}}</p>
 												</div>
 												<div class="row nomargin" style="padding: 0 15px">
-													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">一定要汇到上面的帳號，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">一定要汇到上面的帳號，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
 												</div>
 											</div>
 										</div>
@@ -298,7 +298,7 @@
 								<div class="row nomargin" style="margin-top: 20px;">
 									<div class="col-lg-12 col-md-12">
 										<p class="pull-left" style="font-size: 20px;font-weight: bold;text-align: left;">订单明细：{{billID}}</p>
-
+										
 										<p  class="pull-right hidden-sm hidden-xs"  style="background:#08bf69; padding:5px 5px; border-radius:5px; color:#fff; ">{{billState}}</p>
 										<p  class="pull-left hidden-lg hidden-md"  style="background:#08bf69; padding:5px 5px; border-radius:5px; color:#fff; ">{{billState}}</p>
 									</div>
@@ -391,7 +391,7 @@
 													<p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
 												</div>
 												<div class="row nomargin" style="padding: 0 15px">
-													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">一定要汇到上面的帳號，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+													<p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;text-align: left;">一定要汇到上面的帳號，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
 												</div>
 											</div>
 										</div>
@@ -594,7 +594,7 @@
 			<div class="row nomargin" style="margin: 0;">
 				<div class="col-sm-12 col-xs-12 nopadding" style="border: 0.05em solid #ccc;border-left: none;border-right: none;">
 					<div style="background: rgba(0,0,0,0.5);height: 3em;position: absolute;width: 100%;z-index: 99;" v-if="!userInfo.isCStoreOpened">
-						<center><p style="color: #fff;line-height: 3em;">收取2%的手續費，不足30台幣按30台幣收取</p></center>
+						<center><p style="color: #fff;line-height: 3em;">收取2%的手續費，不足30台幣按30台幣收取</p></center>		
 					</div>
 					<input type="radio" class="pull-left" name="" id="" value="" style="margin: 1em;"/>
 					<img src="../../assets/images/mobile/chaoshangfukuan.png" style="width: 2em;margin-top: 0.5em;margin-right: 1em;" class="pull-left"/>
@@ -902,7 +902,7 @@
 	  		}
 
 	  	},
-
+	  	
 	  },
 	  methods:{
 	  	getTypes: function () {
@@ -1062,7 +1062,7 @@
 	  		});
 	  	},
 	  	getLowPaymount(){
-
+	  		
 	  		var that=this;
 	  		$.ajax({
 	  			type:'get',
@@ -1080,7 +1080,7 @@
 			    	}
 			    }
 	  		});
-
+	  		
 	  	},
 	  	getBankDetailFunc(){
 	  		$.ajax({
@@ -1124,18 +1124,18 @@
 	  	},
 	  	transformDate:function (timeStamp) {
 	  		var date = new Date(timeStamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
-	        var y = date.getFullYear();
-		    var m = date.getMonth() + 1;
-		    m = m < 10 ? ('0' + m) : m;
-		    var d = date.getDate();
-		    d = d < 10 ? ('0' + d) : d;
-		    var h = date.getHours();
-		    h = h < 10 ? ('0' + h) : h;
-		    var minute = date.getMinutes();
-		    var second = date.getSeconds();
-		    minute = minute < 10 ? ('0' + minute) : minute;
-		    second = second < 10 ? ('0' + second) : second;
-		    return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;
+	        var y = date.getFullYear();    
+		    var m = date.getMonth() + 1;    
+		    m = m < 10 ? ('0' + m) : m;    
+		    var d = date.getDate();    
+		    d = d < 10 ? ('0' + d) : d;    
+		    var h = date.getHours();  
+		    h = h < 10 ? ('0' + h) : h;  
+		    var minute = date.getMinutes();  
+		    var second = date.getSeconds();  
+		    minute = minute < 10 ? ('0' + minute) : minute;    
+		    second = second < 10 ? ('0' + second) : second;   
+		    return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;  
 	  	},
 	  	getsupersedeNoticeInfoFunc(){
 	  		var that=this;
@@ -1159,10 +1159,10 @@
 				    		that.getCenterNotice.showFlag=true;
 				    		that.getCenterNotice.noticeArray = res.data;
 				    	}
-
+				    	
 				    },
 				    error:function(res){
-
+				    	
 				    }
 		  		});
 
@@ -1173,7 +1173,7 @@
 	  			url:getService()+"/user/getInfo",
 	  			dataType: "json",
 	  			data:{
-
+	  				
 	  			},
 	  			xhrFields: {
 			        withCredentials: true
@@ -1201,8 +1201,8 @@
 	  		if(parseFloat(this.RMBAmount).toString() == "NaN") {
 			　　layer.msg('请输入正确的儲值金额',{icon:5});
 	  			return;
-		　　}
-
+		　　} 
+	  		
 	  		var val=$('input:radio[name="typeStr"]:checked').val();
 	  		if(val==null){
 	  			layer.msg('請選擇付款方式',{icon:5});
@@ -1221,7 +1221,7 @@
 	  		$('#step1').hide();
 	  		$('#step2').show();
 	  		this.nowStep = 2;
-
+  			
 	  	},
 	  	finalStep:function () {
 	  		if(this.chooseBank=='' || this.chooseBank==null){
@@ -1231,11 +1231,11 @@
 	  		var param = {
 	  			RMBAmount:this.RMBAmount,
 				comment:this.comments,
-				chargeInfo:{
+				chargeInfo:{ 
 					chargeFromAccount: this.userLastSix,
 					toOurAccount:this.typeStr.split(' ')[0]
 				},
-				rechargeInfo:{
+				rechargeInfo:{ 
 					rechargeToAccount: this.wechatAccountItem.wechatID
 				}
 	  		}
@@ -1324,7 +1324,7 @@
           crossDomain: true,
           success: function (res) {
             if (res.error_code == 0 || res.error_code == 200) {
-
+              
             }else{
                 this.popup_error_msg ='发送验证码失败！';
                 $('#myErrorModal').modal('show');
@@ -1366,7 +1366,7 @@
 	          layer.msg(' 帳號末六位不能為空！',{icon:5});
 	        }else if(!this.bankCode){
 	          layer.msg(' 驗證碼不能為空！',{icon:5});
-	        }
+	        } 
 
 	        if(this.sixCode.length!=6){
 	          layer.msg(' 請輸入正確的帳號末六位！',{icon:5});

@@ -114,7 +114,7 @@
                         <p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
                       </div>
                       <div class="row" style="padding: 0 15px">
-                        <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+                        <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
                       </div>
                     </div>
                   </div>
@@ -134,7 +134,7 @@
                     <span class="pull-left" style="font-size: 20px;font-weight: bold; line-height:50px; ">订单詳情</span>
                     <a  class="pull-right" style="color: #08bf69;margin-right: 10px;line-height: 50px;">{{billState}}</a>
                     <a class="pull-right" style="color: #999;margin-right: 10px; line-height: 50px;">我們正在拼命為您代付，請稍等！</a>
-
+                    
 
                   </div>
                 </div>
@@ -233,7 +233,7 @@
                           <p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
                         </div>
                         <div class="row" style="padding: 0 15px">
-                          <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+                          <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
                         </div>
                       </div>
                     </div>
@@ -353,7 +353,7 @@
                           <p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
                         </div>
                         <div class="row" style="padding: 0 15px">
-                          <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+                          <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
                         </div>
                       </div>
                     </div>
@@ -468,7 +468,7 @@
                             <p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
                           </div>
                           <div class="row" style="padding: 0 15px">
-                            <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+                            <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
                           </div>
                         </div>
                       </div>
@@ -581,7 +581,7 @@
                             <p class="pull-left" style="margin-bottom: 0;color: #08bf69;line-height: 22px;width: 100%;text-align: left;">公司名：{{finalbankDetailInfo.company}}</p>
                           </div>
                           <div class="row" style="padding: 0 15px">
-                            <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
+                            <p class="pull-left" style="font-size: 12px;color: #999;line-height: 40px;margin-bottom: 0px;">一定要汇到上面的账号，玉寶不接受臨櫃匯款/無折存款/電匯/割發/ATM現金存入</p>
                           </div>
                         </div>
                       </div>
@@ -606,7 +606,7 @@
         </div>
 
 
-
+          
      </div>
      <pageFooter class="hidden-sm hidden-xs"></pageFooter>
      <mobileFooter class="hidden-lg hidden-md"></mobileFooter>
@@ -677,7 +677,7 @@ export default {
     let self = this;
     this.getBankDetailFunc();
     this.getInfo(this.billID);
-
+    
   },
   methods:{
     judgeState(typeState,dealState){
@@ -764,7 +764,7 @@ export default {
                 this.finalbankDetailInfo.company=res.data.chargeInfo.toOurAccount.accountName;
                 this.finalbankDetailInfo.account=res.data.chargeInfo.toOurAccount.bankCode+' '+res.data.chargeInfo.toOurAccount.bankName+' '+'收款賬號'+res.data.chargeInfo.toOurAccount.accountCode;
               }
-
+              
               //微信账号
               if(res.data.rechargeInfo){
                 if(res.data.rechargeInfo.rechargeAccountType=='wechat'){
@@ -795,7 +795,7 @@ export default {
               }
 
               this.judgeState(res.data.typeState,res.data.dealState);
-
+              
             }else{
               layer.msg('訂單获取失敗,請重新再試！',{icon:5});
             }
@@ -808,18 +808,18 @@ export default {
     },
     transformDate:function (timeStamp) {
         var date = new Date(timeStamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
-          var y = date.getFullYear();
-        var m = date.getMonth() + 1;
-        m = m < 10 ? ('0' + m) : m;
-        var d = date.getDate();
-        d = d < 10 ? ('0' + d) : d;
-        var h = date.getHours();
-        h = h < 10 ? ('0' + h) : h;
-        var minute = date.getMinutes();
-        var second = date.getSeconds();
-        minute = minute < 10 ? ('0' + minute) : minute;
-        second = second < 10 ? ('0' + second) : second;
-        return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;
+          var y = date.getFullYear();    
+        var m = date.getMonth() + 1;    
+        m = m < 10 ? ('0' + m) : m;    
+        var d = date.getDate();    
+        d = d < 10 ? ('0' + d) : d;    
+        var h = date.getHours();  
+        h = h < 10 ? ('0' + h) : h;  
+        var minute = date.getMinutes();  
+        var second = date.getSeconds();  
+        minute = minute < 10 ? ('0' + minute) : minute;    
+        second = second < 10 ? ('0' + second) : second;   
+        return y + '-' + m + '-' + d+' '+h+':'+minute+':'+second;  
 
       },
     getBankDetailFunc(){
@@ -839,12 +839,12 @@ export default {
         });
 
       },
-
+   
 
   }
 }
 </script>
-<style >
+<style > 
   /*@import url("../../assets/css/PCstyle.css");*/
 
   .tableForBills tr td, .tableForBills tr th{
