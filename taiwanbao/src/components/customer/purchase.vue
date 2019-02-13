@@ -146,7 +146,7 @@
 									</div>
 									<div class="row nomargin" style="margin-top: 20px;">
 										<div class="col-lg-1 col-md-1 col-sm-2 col-xs-2" style="padding-right: 0;">
-											<input type="radio" name="typeStr" id="" value="822 中國信託 收款賬戶 141191" v-model="typeStr" class="pull-left" style="margin-top: 10px;"/>
+											<input type="radio" name="typeStr" id="" value="822 中國信託 收款賬戶 628612" v-model="typeStr" class="pull-left" style="margin-top: 10px;"/>
 										</div>
 										<div class="col-lg-11 col-md-11 col-sm-10 col-xs-10" style="padding-left: 0;">
 											<div class="row nomargin">
@@ -155,7 +155,7 @@
 												</div>
 												<div class="col-lg-11 col-md-11 col-sm-9 col-xs-9 nopadding">
 													<div class="row nomargin">
-														<p class="pull-left" style="margin: 0;font-size: 12px;">822 中國信託 收款賬戶 141191</p>
+														<p class="pull-left" style="margin: 0;font-size: 12px;">822 中國信託 收款賬戶 628612</p>
 													</div>
 													<div class="row nomargin">
 														<p class="pull-left" style="margin: 0;color: #e00;font-size: 12px;">支援全臺各家銀行轉入</p>
@@ -1410,15 +1410,15 @@
 	        if(!this.bankName){
 	          layer.msg('請選擇付款渠道',{icon:5});
 	        }else if(!this.accountName){
-	          layer.msg(' 賬戶姓名不能為空！',{icon:5});
+	          layer.msg(' 賬戶姓名不能為空！',{icon:5});
 	        }else if(!this.sixCode){
-	          layer.msg(' 賬號末六位不能為空！',{icon:5});
+	          layer.msg(' 賬號末六位不能為空！',{icon:5});
 	        }else if(!this.bankCode){
-	          layer.msg(' 驗證碼不能為空！',{icon:5});
+	          layer.msg(' 驗證碼不能為空！',{icon:5});
 	        } 
 
 	        if(this.sixCode.length!=6){
-	          layer.msg(' 請輸入正確的賬號末六位！',{icon:5});
+	          layer.msg(' 請輸入正確的賬號末六位！',{icon:5});
 	        }
 
 
@@ -1443,15 +1443,15 @@
 	          crossDomain: true,
 	          success: function (res) {
 	            if(res.error_code == 0 || res.error_code==200){
-	              layer.msg(' 提交成功！',{icon:1});
+	              layer.msg(' 提交成功！',{icon:1});
 	              this.getInfo();
 	              $('#bankModal').modal('hide');
 	            }else{
-	            	layer.msg(' 提交失敗！',{icon:5});
+	            	layer.msg(' 提交失敗！',{icon:5});
 	            }
 	          }.bind(this),
 	          error:function(res){
-	          	layer.msg(' 提交失敗！',{icon:5});
+	          	layer.msg(' 提交失敗！',{icon:5});
 	          }
 	        });
 	      },

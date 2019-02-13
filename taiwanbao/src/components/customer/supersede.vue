@@ -209,12 +209,12 @@
 								<div class="row nomargin hidden-sm hidden-xs" style="margin-top: 15px;padding: 0 15px;">
 									<div class="pull-left" style="width: 15%;">
 										<img src="../../assets/images/xintuo.jpg" class="pull-right" style="width: 34px;margin-right: 15px;border-radius: 50%; margin-left:15px; "/>
-										<input type="radio" name="typeStr" value="822 中國信託 收款賬戶 141191" v-model="typeStr" class="pull-right" style="margin-top: 10px;"/>
+										<input type="radio" name="typeStr" value="822 中國信託 收款賬戶 628612" v-model="typeStr" class="pull-right" style="margin-top: 10px;"/>
 										
 									</div>
 									<div class="pull-left" style="width: 85%;">
 										<div class="row nomargin">
-											<p class="pull-left" style="margin: 0;font-size: 10px;">822 中國信託 收款賬戶 141191</p>
+											<p class="pull-left" style="margin: 0;font-size: 10px;">822 中國信託 收款賬戶 628612</p>
 										</div>
 										<div class="row nomargin">
 											<p class="pull-left" style="margin: 0;color: #e00;font-size: 10px;">支援全臺各家銀行轉入</p>
@@ -224,12 +224,12 @@
 								<div class="row nomargin hidden-lg hidden-md" style="margin-top: 15px;padding: 0 15px;">
 									<div class="pull-left" style="width: 30%;">
 										<img src="../../assets/images/xintuo.jpg" class="pull-right" style="width: 34px;margin-right: 15px;border-radius: 50%; margin-left:15px; "/>
-										<input type="radio" name="typeStr" value="822 中國信託 收款賬戶 141191" v-model="typeStr" class="pull-right" style="margin-top: 10px;"/>
+										<input type="radio" name="typeStr" value="822 中國信託 收款賬戶 628612" v-model="typeStr" class="pull-right" style="margin-top: 10px;"/>
 										
 									</div>
 									<div class="pull-left" style="width: 70%;">
 										<div class="row nomargin">
-											<p class="pull-left" style="margin: 0;font-size: 10px;">822 中國信託 收款賬戶 141191</p>
+											<p class="pull-left" style="margin: 0;font-size: 10px;">822 中國信託 收款賬戶 628612</p>
 										</div>
 										<div class="row nomargin">
 											<p class="pull-left" style="margin: 0;color: #e00;font-size: 10px;">支援全臺各家銀行轉入</p>
