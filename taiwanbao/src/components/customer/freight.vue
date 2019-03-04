@@ -75,16 +75,16 @@
 										</div>
 										<div class="row nomargin" style="margin-top: 10px;">
 											<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding: 0;">
-												<input type="radio" name="typeStr"  value="812 台新商銀 收款賬戶 002857" v-model="typeStr" class="pull-left" style="margin-top: 10px;"/>
+												<input type="radio" name="typeStr"  value="054 京城商銀 收款賬戶 002438" v-model="typeStr" class="pull-left" style="margin-top: 10px;"/>
 											</div>
 											<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding-left: 0;">
 												<div class="row nomargin">
 													<div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 nopadding">
-														<center><img src="../../assets/images/taixin.jpg" class="pull-left" style="width: 80%;border-radius: 50%;"/></center>
+														<center><img src="../../assets/images/jingcheng.jpg" class="pull-left" style="width: 80%;border-radius: 50%;"/></center>
 													</div>
 													<div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 nopadding">
 														<div class="row nomargin">
-															<p class="pull-left" style="margin: 0;font-size: 12px;">812 台新商銀 收款賬戶 002857</p>
+															<p class="pull-left" style="margin: 0;font-size: 12px;">054 京城商銀 收款賬戶 002438</p>
 														</div>
 														<div class="row nomargin">
 															<p class="pull-left" style="margin: 0;color: #e00;font-size: 12px;">支援全臺各家銀行轉入</p>
@@ -95,16 +95,16 @@
 										</div>
 										<div class="row nomargin" style="margin-top: 20px;">
 											<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding: 0;">
-												<input type="radio" name="typeStr"  value="822 中國信託 收款賬戶 628612" v-model="typeStr" class="pull-left" style="margin-top: 10px;"/>
+												<input type="radio" name="typeStr"  value="806 元大商銀 收款賬戶 186510" v-model="typeStr" class="pull-left" style="margin-top: 10px;"/>
 											</div>
 											<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding-left: 0;">
 												<div class="row nomargin">
 													<div class="col-lg-1 col-md-1 col-sm-2 col-xs-2 nopadding">
-														<center><img src="../../assets/images/xintuo.jpg" class="pull-left" style="width: 80%;border-radius: 50%;"/></center>
+														<center><img src="../../assets/images/yuanda.jpg" class="pull-left" style="width: 80%;border-radius: 50%;"/></center>
 													</div>
 													<div class="col-lg-11 col-md-11 col-sm-10 col-xs-10 nopadding">
 														<div class="row nomargin">
-															<p class="pull-left" style="margin: 0;font-size: 12px;">822 中國信託 收款賬戶 628612</p>
+															<p class="pull-left" style="margin: 0;font-size: 12px;">806 元大商銀 收款賬戶 186510</p>
 														</div>
 														<div class="row nomargin">
 															<p class="pull-left" style="margin: 0;color: #e00;font-size: 12px;">支援全臺各家銀行轉入</p>
