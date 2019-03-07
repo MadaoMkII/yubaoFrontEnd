@@ -20,13 +20,13 @@
 									<div class="col-lg-12 col-md-12">
 										<label class="pull-left" style="font-size: 18px;margin-right: 15px;">当日数据看板</label>
 										<a href="javascript:void(0)" v-on:click="setSearchType('year')">
-											<p class="colorTxt pull-left" id="year" style="padding: 0 30px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;">年</p>
+											<p class="normalTxt pull-left" id="year" style="padding: 0 30px;border-top-left-radius: 5px;border-bottom-left-radius: 5px;">年</p>
 										</a>
 										<a href="javascript:void(0)" v-on:click="setSearchType('month')">
 											<p class="normalTxt pull-left" id="month" style="padding: 0 30px;border-left: none;">月</p>
 										</a>
 										<a href="javascript:void(0)" v-on:click="setSearchType('day')">
-											<p class="normalTxt pull-left" id="day" style="padding: 0 30px;border-left: none;border-top-right-radius: 5px;border-bottom-right-radius: 5px;">日</p>
+											<p class="colorTxt pull-left" id="day" style="padding: 0 30px;border-left: none;border-top-right-radius: 5px;border-bottom-right-radius: 5px;">日</p>
 										</a>
 										<label class="pull-left" style="margin-left: 30px;line-height: 34px;margin-right: 15px;">交易时间：</label>
 										<datetime :readonly='true' format='YYYY-MM-DD' class="pull-left" id="startTime" style="width: 15%;margin-top: 2px;"></datetime>
@@ -238,7 +238,7 @@
 		        	platform:''
 		      	},
 				feeRate:'',
-				searchType:'year',
+				searchType:'day',
 				beforeDate:'',
 				afterDate:'',
 				taobaoAmount:'',
@@ -364,25 +364,29 @@
 				if (this.beforeDate != '') {
 					param = {
 						afterDate:this.beforeDate,
-						beforeDate:this.afterDate
+						beforeDate:this.afterDate,
+						range:'special'
 					}
 				} else {
 					if (this.searchType == 'year') {
 						param = {
-							afterDate:year+'-01-01',
-							beforeDate:year+'-12-31'
+// 							afterDate:year+'-01-01',
+// 							beforeDate:year+'-12-31'
+							range:'year'
 						}
 					}
 					if (this.searchType == 'month') {
 						param = {
-							afterDate:year+'-'+realMonth+'-01',
-							beforeDate:year+'-'+realMonth+'-'+lastDay
+// 							afterDate:year+'-'+realMonth+'-01',
+// 							beforeDate:year+'-'+realMonth+'-'+lastDay
+							range:'month'
 						}
 					}
 					if (this.searchType == 'day') {
 						param = {
-							afterDate:year+'-'+realMonth+'-'+day,
-							beforeDate:year+'-'+realMonth+'-'+day
+// 							afterDate:year+'-'+realMonth+'-'+day,
+// 							beforeDate:year+'-'+realMonth+'-'+day
+							range:'day'
 						}
 					}
 				}
