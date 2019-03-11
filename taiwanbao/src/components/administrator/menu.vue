@@ -1,6 +1,6 @@
 <template>
 	<div class="menu">
-		<div class="row" style="height: 800px;background: #001529;">
+		<div class="row" id="menu" style="background: #001529;">
 			<div class="col-lg-12 col-md-12" style="padding: 0;">
 				<div class="row" style="background: #002140;padding: 10px 0;">
 					<div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4">
@@ -77,7 +77,23 @@
 </template>
 
 <script>
-
+	export default{
+		name:'menu',
+		data(){
+			return{
+				height:''
+			}
+		},
+		mounted:function () {
+			this.getHeight();
+		},
+		methods:{
+			getHeight:function () {
+				this.height = window.screen.height;
+				$('#menu').css('height',this.height+'px');				
+			}
+		}
+	}
 
 </script>
 

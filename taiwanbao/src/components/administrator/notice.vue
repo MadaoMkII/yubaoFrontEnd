@@ -12,7 +12,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<div class="row" style="margin: 15px;background: #fff;height: 735px;overflow-y: scroll;margin-bottom: 0;">
+						<div class="row" id="notice" style="margin: 15px;background: #fff;overflow-y: scroll;margin-bottom: 0;">
 							<div class="col-lg-12 col-md-12" style="padding: 30px 15px;">
 								<div class="row">
 									<div class="col-lg-12 col-md-12">
@@ -304,12 +304,16 @@
 		mounted:function () {
 			this.getNotice(this.currentPage);
 			this.getAllModelNames();
+			this.setHeight();
 //			tinymce.init({});
 		},
 		updated(){
 		  	$('.annoucemsg').find('img').css('width','100%');
 		  },
 		methods:{
+			setHeight:function () {
+				$('#notice').css('height',(window.screen.height-65)+'px');
+			},
 			//			编辑器函数
 			onEditorBlur(editor) {
 		      console.log('editor blur!', editor)

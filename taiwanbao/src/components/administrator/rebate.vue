@@ -12,7 +12,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<div class="row" style="margin: 15px;background: #fff;height: 735px;overflow-y: scroll;margin-bottom: 0;">
+						<div class="row" id="rebate" style="margin: 15px;background: #fff;overflow-y: scroll;margin-bottom: 0;">
 							<div class="col-lg-12 col-md-12" style="padding: 30px 15px;">
 								<div class="row">
 									<p class="pull-left" style="font-size: 16px;font-weight: bold;">返利设置</p>
@@ -89,6 +89,14 @@
 		components:{
 			leftmenu,
 			rightheader
+		},
+		mounted:function () {
+			this.setHeight();
+		},
+		methods:{
+			setHeight:function () {
+				$('#rebate').css('height',(window.screen.height-65)+'px');
+			}
 		}
 	}
 </script>

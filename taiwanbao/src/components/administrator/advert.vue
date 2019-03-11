@@ -12,7 +12,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<div class="row" style="margin: 15px;background: #fff;height: 735px;overflow-y: scroll;margin-bottom: 0;">
+						<div class="row" id="advert" style="margin: 15px;background: #fff;overflow-y: scroll;margin-bottom: 0;">
 							<div class="col-lg-12 col-md-12" style="padding: 30px 15px;">
 								<div class="row">
 									<div class="col-lg-12 col-md-12">
@@ -112,8 +112,12 @@
 		},
 		mounted:function () {
 			this.getImg();
+			this.setHeight();
 		},
 		methods:{
+			setHeight:function () {
+				$('#advert').css('height',(window.screen.height-65)+'px');
+			},
 			addPic:function () {
 				$('#picModal').modal('show');
 			},

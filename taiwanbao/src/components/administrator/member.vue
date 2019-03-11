@@ -12,7 +12,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<div class="row" style="margin: 15px;background: #fff;height: 735px;overflow-y: scroll;margin-bottom: 0;">
+						<div class="row" id="member" style="margin: 15px;background: #fff;overflow-y: scroll;margin-bottom: 0;">
 							<div class="col-lg-12 col-md-12" style="padding: 30px 15px;">
 								<div class="row">
 									<div class="col-lg-12 col-md-12">
@@ -235,8 +235,12 @@
 		},
 		mounted:function () {
 			this.getUsers(this.currentPage);
+			this.setHeight();
 		},
 		methods:{
+			setHeight:function () {
+				$('#member').css('height',(window.screen.height-65)+'px');
+			},
 			search:function () {
 				// var isEmployee = false;
 				// if (this.userStatus == 0) {

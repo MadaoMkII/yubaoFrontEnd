@@ -12,7 +12,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12 col-md-12">
-						<div class="row" style="margin: 15px;background: #fff;height: 735px;overflow-y: scroll;margin-bottom: 0;">
+						<div class="row" id="manage" style="margin: 15px;background: #fff;height: 735px;overflow-y: scroll;margin-bottom: 0;">
 							<div class="col-lg-12 col-md-12" style="padding: 30px 15px;">
 								<!--<datetime :readonly='true' format='YYYY-MM-DD' :class="form-control" id="startTime"></datetime>
 								<button type="button" v-on:click="test()">保存</button>-->
@@ -265,8 +265,12 @@
 		mounted:function () {
 			this.getSetting();
 			this.searchData();
+			this.setHeight();
 		},
 		methods:{
+			setHeight:function () {
+				$('#manage').css('height',(window.screen.height-65)+'px');
+			},
 			getSetting:function () {
 				$.ajax({
 		  			type:'get',
