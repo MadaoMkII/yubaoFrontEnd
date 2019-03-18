@@ -58,7 +58,8 @@
 													<th style="border-top-left-radius: 5px;"></th>
 													<th style="width: 10%;">账号</th>
 													<th style="width: 10%;">邮箱</th>
-													<th style="width: 10%;">真实姓名</th>													
+													<th style="width: 10%;">真实姓名</th>
+													<th style="width: 10%;">实名ID</th>
 													<th style="width: 10%;">昵称</th>
 													<th style="width: 10%;">账户金额(R币)</th>
 													<th style="width: 10%;">会员等级/身份</th>
@@ -76,6 +77,7 @@
 													<td style="line-height: 20px;">{{item.tel_number}}</td>
 													<td style="line-height: 20px;">{{item.email_address}}</td>
 													<td style="line-height: 20px;">{{item.realName||''}}</td>													
+													<td style="line-height: 20px;">{{item.realIDNumber||''}}</td>
 													<td style="line-height: 20px;">{{item.nickName}}</td>
 													<td style="line-height: 20px;">{{item.Rcoins}} <a href="javascript:void(0)" style="display: none;" v-on:click="checkRB(item.uuid)">详情</a></td>
 													<td style="line-height: 20px;">{{item.VIPLevel}}</td>

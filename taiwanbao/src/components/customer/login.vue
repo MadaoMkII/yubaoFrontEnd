@@ -581,6 +581,7 @@
 	  	},
 	  	login:function () {
 	  		var _this = this;
+			console.log(getService());
 	  		$.ajax({
 	  			type:'post',
 	  			url:getService()+"/user/login",
